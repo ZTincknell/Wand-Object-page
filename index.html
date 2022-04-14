@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="http://fonts.cdnfonts.com/css/harry-potter?styles=41888" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  
+<div class="header">
+    <div class="image"></div><div class="text">The Wand Characteristics</div><div class="imagetwo"></div>
+</div>
+<p>Below are photos of the wands and their characteristics.</p>
+<div class="hp">
+  <img src="litWand.jpg" alt="Harry Potter's wand"> <br> <p id="hpwand">
+  </p>
+</div>
+  <div class="hg">
+  <img src="hgwand.jpg" alt="Hermione Granger's wand"> <br> <p id= "hgwand">
+  </p>
+  </div>
+  <div class="rw">
+  <img src="rwwand.webp" alt="Ron Weasley's wand"> <br> <p id="rwwand">
+  </p>
+  </div>
+  <div class ="dm">
+  <img src="dmwand.jpg" alt="Draco Malfoy's wand"> <br> <p id="dmwand">
+  </p>
+  </div>
+  <div class="ad">
+  <img src="adwand.jpg" alt="Albus Dumbledore's wand"> <br> <p id="adwand">
+  </p>
+  </div>
+  <div class="tr">
+  <img src = "tmwand.jpg" alt="Tom Riddle's (Voldemort) wand"> <p id="trwand">
+  </p>
+  </div>
+
+<script>
+  function Characteristics(name, wood, size, core) {
+    this.fullName = name;
+    this.woodType= wood;
+    this.wandLength = size;
+    this.wandCore= core;
+  }
+  var character1 = new Characteristics("Harry Potter", "Holly", "11 inches", "Phoenix Feather");
+  var character2 = new Characteristics("Hermione Granger", "Vine", "10 3/4 inches", "Dragon Heartstring");
+  var character3 = new Characteristics("Ron Weasley", "Ash", "12 inches", "Unicorn Hair");
+  var character4 = new Characteristics("Draco Malfoy", "Hawthorn", "10 inches", "Unicorn Hair");
+  var character5 = new Characteristics("Albus Dumbledore", "Elder", "15 inches", "Thestral Tail Hair");
+  var character6 = new Characteristics("Tom Riddle", "Yew", "13 1/2 inches", "Phoenix Feather");
+  
+  document.getElementById("hpwand").innerHTML = "Name: " + character1.fullName + "<br>" + "Wood Type: " + character1.woodType + "<br>" + "Wand Size: " + character1.wandLength + "<br>" + "Wand Core: " + character1.wandCore;
+  document.getElementById("hgwand").innerHTML = "Name: " + character2.fullName + "<br>" + "Wood Type: " + character2.woodType + "<br>" + "Wand Size: " + character2.wandLength + "<br>" + "Wand Core: " + character2.wandCore;
+  document.getElementById("rwwand").innerHTML = "Name: " + character3.fullName + "<br>" + "Wood Type: " + character3.woodType + "<br>" + "Wand Size: " + character3.wandLength + "<br>" + "Wand Core: " + character3.wandCore;
+  document.getElementById("dmwand").innerHTML = "Name: " + character4.fullName + "<br>" + "Wood Type: " + character4.woodType + "<br>" + "Wand Size: " + character4.wandLength + "<br>" + "Wand Core: " + character4.wandCore;
+  document.getElementById("adwand").innerHTML = "Name: " + character5.fullName + "<br>" + "Wood Type: " + character5.woodType + "<br>" + "Wand Size: " + character5.wandLength + "<br>" + "Wand Core: " + character5.wandCore;
+  document.getElementById("trwand").innerHTML = "Name: " + character6.fullName + "<br>" + "Wood Type: " + character6.woodType + "<br>" + "Wand Size: " + character6.wandLength + "<br>" + "Wand Core: " + character6.wandCore;
+</script>
+
+</body>
+
+</html>
